@@ -13,7 +13,7 @@ int compare(const void * a, const void * b)
 int minPlatform(float arrivalTime[], float departureTime[], int size)
 {
 	qsort(arrivalTime, size, sizeof(float), compare);
-	qsort(arrivalTime, size, sizeof(float), compare);
+	qsort(departureTime, size, sizeof(float), compare);
 	
 	int plat_needed = 1, result = 1;
 	int i = 1, j = 0;
